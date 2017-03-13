@@ -2,6 +2,8 @@ package telenav.androidworkshop;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         System.out.println("onDestroy");
+    }
+
+    public void button_pressed(View view){
+        Toast.makeText(this, "Esti ascultator!", Toast.LENGTH_LONG).show();
     }
 
 }
