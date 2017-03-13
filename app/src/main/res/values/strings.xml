@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidWorkshop</string>
+    <string name="text_de_bun_venit">Sal</string>
+    <string name="text_buton">Apasa-ma!</string>
 </resources>
