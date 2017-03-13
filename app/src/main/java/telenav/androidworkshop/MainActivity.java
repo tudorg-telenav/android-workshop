@@ -1,5 +1,6 @@
 package telenav.androidworkshop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,8 +44,11 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("onDestroy");
     }
 
-    public void button_pressed(View view){
+    public void butonApasat(View view){
         Toast.makeText(this, "Esti ascultator!", Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(this, AnotherActivity.class);
+        startActivity(intent);
     }
 
 }
